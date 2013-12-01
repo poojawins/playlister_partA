@@ -1,3 +1,7 @@
+                                              require './lib/song'
+require './lib/artist'
+require './lib/genre'
+
 describe "playlister" do
   it 'Can initialize an Artist' do
     lambda {Artist.new}.should_not raise_error
