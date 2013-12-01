@@ -1,6 +1,7 @@
-                                              require './lib/song'
 require './lib/artist'
+require './lib/song'
 require './lib/genre'
+require './spec_helper'
 
 describe "playlister" do
   it 'Can initialize an Artist' do
@@ -129,19 +130,19 @@ describe "playlister" do
   # Extra Credit
   # Complete any song test that is pending (undefined).
 
-  it 'Can initialize a song' do
+  # it 'Can initialize a song' do
 
-  end
+  # end
 
-  it 'A song can have a name' do
+  # it 'A song can have a name' do
 
-  end
+  # end
 
-  it 'A song can have a genre' do
+  # it 'A song can have a genre' do
 
-  end
+  # end
 
-  it 'A song has an artist' do
+  # it 'A song has an artist' do
 
-  end
+  # end
 end
