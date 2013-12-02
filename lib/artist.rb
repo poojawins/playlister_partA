@@ -32,6 +32,5 @@ class Artist
     @genres << song.genre
   end
   
-
 end
 
