@@ -130,19 +130,25 @@ describe "playlister" do
   # Extra Credit
   # Complete any song test that is pending (undefined).
 
-  # it 'Can initialize a song' do
-
-  # end
+  it 'Can initialize a song' do
+    lambda {Song.new}.should_not raise_error
+  end
 
   # it 'A song can have a name' do
-
+      # song = Song.new
+      # song.name = "Rolling In the Deep"
+      # song.name.should eq("Rolling In the Deep")
   # end
 
   # it 'A song can have a genre' do
-
+      # song = Song.new
+      # song.genre = 'folk'
+      # song.genre.should eq('folk')
   # end
 
   # it 'A song has an artist' do
-
+    # song = Song.new
+    # song.artist = []
+    # song.artist.should eq([])
   # end
 end

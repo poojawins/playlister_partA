@@ -1,18 +1,22 @@
 
 class Song
   
-  attr_accessor :songs, :genres
+  attr_accessor :songs
 
-	def initialize(songs=[])
+	def initialize(songs=[], genre=[])
     @songs = songs
+    @genre = genre
 	end
 
-  # def genre
-  #   genres
-  # end
+  def genre
+    @genre
+  end
 
-  # def 
-  # end
-  
+  def genre=(thing)
+    thing.songs << self
+    @genre = thing
+    @genre
+  end
+
 end
 

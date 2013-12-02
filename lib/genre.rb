@@ -1,17 +1,16 @@
 
 class Genre
 	
-  attr_accessor :genres
+  attr_accessor :genre, :name, :songs, :artists
   GENRES = []
 	
-  def initialize(genres=[])
-	 @genre = genres
+  def initialize(genre=[], name="N/A")
+	 @genre = genre
+   @songs = []
+   @name = name
+   @artists = []
    GENRES << self
 	end
-
-  # def name
-  
-  # end
 
   def self.reset_genres
     GENRES.clear
@@ -24,6 +23,13 @@ class Genre
   def self.count
     GENRES.count
   end
+
+  def artists=(people)
+    people.songs << self
+    @artist = people
+    @artist
+  end
+
 	
 end
 
